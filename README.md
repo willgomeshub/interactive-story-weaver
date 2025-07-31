@@ -15,4 +15,3 @@ This serves as a practical playground for:
 * **Experimenting with prompt engineering for varied story outcomes.**
 
 Join me on this journey as I weave code and creativity to bring interactive storytelling to life!
-```
