@@ -3,6 +3,7 @@ from contextlib import asynccontextmanager
 
 from config.settings import settings
 from repositories.base_repository import connect_to_mongodb, close_mongodb
+from starlette.middleware.cors import CORSMiddleware
 
 
 @asynccontextmanager
@@ -35,7 +36,19 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+# --- Add CORSMiddleware ---
+# maybe later get it from settings
+origins = ["http://localhost:3000"]
 
-@app.get("/")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/hello")
 async def read_root():
     return {"message": "Welcome to the Interactive Story Weaver API!"}
