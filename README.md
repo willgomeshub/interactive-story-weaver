@@ -1,23 +1,18 @@
-
 # Interactive Story Weaver (AI-Powered)
 
 This repository hosts a personal project exploring the exciting intersection of **AI and interactive narrative generation**. The core idea is to build a user-friendly application where users can dive into dynamic stories, shaping the plot through their choices.
 
-Initially, this project focuses on demonstrating the seamless integration of a Generative AI model to:
-
-* **Create initial story prompts and beginnings.**
-* **Dynamically expand narratives based on user input.**
-* *(Future: Potentially generate visual elements/illustrations according to the story.)*
-
-This serves as a practical playground for:
+This application is a practical playground for:
 
 * **Developing robust backend logic for AI interaction.**
 * **Designing an intuitive user interface for narrative engagement.**
 * **Experimenting with prompt engineering for varied story outcomes.**
 
-## Project Description
+The Interactive Story Weaver is an application that demonstrates the seamless integration of a Generative AI model to:
 
-The Interactive Story Weaver is a personal application developed to explore the integration of generative AI models with software development. The central idea is to create a platform where users can generate and shape stories interactively. With each step, the AI expands the narrative based on user choices, creating a dynamic and unique storytelling experience.
+* **Create initial story prompts and beginnings.**
+* **Dynamically expand narratives based on user input.**
+* *(Future: Potentially generate visual elements/illustrations that match the story.)*
 
 ## Motivation and Tech Stack
 
@@ -77,7 +72,8 @@ To configure the MongoDB database on your Ubuntu 24.04 machine, follow these ste
     ```
 4.  **Enable Access Control:**
     * Edit the MongoDB configuration file with `sudo nano /etc/mongod.conf`.
-    * Add the line `authorization: enabled` with two spaces of indentation in the `security:` section. **CAUTION:** Indentation is important; do not use tabs, use spaces to match the other sections.
+    * Add the line `authorization: enabled` with two spaces of indentation in the `security:` section. 
+    * **CAUTION:** Indentation is important; do not use tabs, use spaces to match the other sections.
     ```yaml
     security:
       authorization: enabled
