@@ -47,8 +47,8 @@ I used Ubuntu 24.04 for this project, and below is a description of the installa
 To configure the MongoDB database on your Ubuntu 24.04 machine, follow these steps:
 1.  Clone the repository:
     ```bash
-    git clone [your-repository-here]
-    cd [your-project-folder]
+    git clone git@github.com:willgomeshub/interactive-story-weaver.git
+    cd interactive-story-weaver
     ```
 2.  **Install prerequisites and MongoDB:**
     ```bash
@@ -108,7 +108,7 @@ To configure the MongoDB database on your Ubuntu 24.04 machine, follow these ste
 
 1.  Navigate to the `backend/` folder:
     ```bash
-    cd [your-project-folder]/backend
+    cd [your-project-folder]/interactive-story-weaver/backend
     ```
 2.  Create and activate the virtual environment and install dependencies:
     ```bash
@@ -129,7 +129,7 @@ To configure the MongoDB database on your Ubuntu 24.04 machine, follow these ste
 
 1.  Navigate to the `frontend/` folder:
     ```bash
-    cd [your-project-folder]/frontend
+    cd [your-project-folder]/interactive-story-weaver/frontend
     ```
 2.  Install dependencies:
     ```bash
